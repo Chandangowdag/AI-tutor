@@ -1,78 +1,33 @@
-# ==============================================================================
-# Python / Backend
-# ==============================================================================
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
-*.so
-.pytest_cache/
-.coverage
-.mypy_cache/
-.ruff_cache/
-*.log
 
-# Environments & Dependencies
-venv/
+# Environments & Secrets
 .venv/
-env/
-.env
+venv/
 ENV/
-pip-log.txt
-pip-delete-this-directory.txt
+.env
+.env.*
+!.env.example
 
-# Databases
+# Databases & Vector Stores
 *.db
 *.sqlite3
 .chroma_db/
 tutor_app.db
 
-# ==============================================================================
-# Node.js / Frontend
-# ==============================================================================
-frontend/node_modules/
+# Frontend Dependencies & Builds
 node_modules/
-frontend/dist/
-frontend/build/
-frontend/.vite/
-frontend/.env.local
-frontend/.env.development.local
-frontend/.env.test.local
-frontend/.env.production.local
-.eslintcache
-
-# ==============================================================================
-# OS & IDE Specific
-# ==============================================================================
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# ==============================================================================
-# Distribution / Build Artifacts
-# ==============================================================================
+**/node_modules/
 dist/
 build/
-*.egg-info/
+.eslintcache
 
-# ==============================================================================
-# Logs & Temp Files
-# ==============================================================================
-*.out
-*.err
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# OS generated files
+.DS_Store
+Thumbs.db
 
-# ==============================================================================
-# Jupyter / ML
-# ==============================================================================
-.ipynb_checkpoints/
-
-# ==============================================================================
-# Temp
-# ==============================================================================
-*.tmp
-*.temp
+# Logs
+*.log
+logs/
