@@ -1,23 +1,78 @@
-data/
-# Byte-compiled / optimized / DLL files
+# ==============================================================================
+# Python / Backend
+# ==============================================================================
 __pycache__/
 *.py[cod]
 *$py.class
+*.so
+.pytest_cache/
+.coverage
+.mypy_cache/
+.ruff_cache/
+*.log
 
-# Environments
-.venv/
+# Environments & Dependencies
 venv/
-ENV/
+.venv/
+env/
 .env
+ENV/
+pip-log.txt
+pip-delete-this-directory.txt
 
-# Distribution / build
+# Databases
+*.db
+*.sqlite3
+.chroma_db/
+tutor_app.db
+
+# ==============================================================================
+# Node.js / Frontend
+# ==============================================================================
+frontend/node_modules/
+node_modules/
+frontend/dist/
+frontend/build/
+frontend/.vite/
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+.eslintcache
+
+# ==============================================================================
+# OS & IDE Specific
+# ==============================================================================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==============================================================================
+# Distribution / Build Artifacts
+# ==============================================================================
 dist/
 build/
 *.egg-info/
 
-# OS generated files
-.DS_Store
-Thumbs.db
-venv/
-.env
-__pycache__/
+# ==============================================================================
+# Logs & Temp Files
+# ==============================================================================
+*.out
+*.err
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ==============================================================================
+# Jupyter / ML
+# ==============================================================================
+.ipynb_checkpoints/
+
+# ==============================================================================
+# Temp
+# ==============================================================================
+*.tmp
+*.temp
